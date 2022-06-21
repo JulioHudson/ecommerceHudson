@@ -1,0 +1,36 @@
+.nav {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(81, 187, 254);
+    min-height: 3.75rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 0 1rem;
+}
+
+.nav-logo {
+    font-weight: bold;
+}
+
+.nav-item {
+    text-decoration: none;
+    margin: 1rem;
+    position: relative;
+    opacity: 0.9;
+    color: #000000;
+}
+
+.nav-items {
+    padding-right: 4rem;
+} 
+
+.nav-item:hover {
+    color: white;
+}
+
+.nav img {
+    width: 70px;
+    height: 90px;
+}
