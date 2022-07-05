@@ -1,14 +1,15 @@
 import React from 'react';
-import Product from './Product';
+import Item from './Item';
 
-export default function ItemListContainer(props) {
-    const {products, onAdd} = props;
+
+export default function ItemList({ productList }) {
+
     return (
         <main className="block col-2">
             <h2>Nuestro merchandising</h2>
-            <div className="row">
-                {products.map((product) => ( 
-                    <Product key={product.id} product={product} onAdd={onAdd}></Product>
+            <div className="row card">
+                {productList.map((product) => ( 
+                    <Item key={product.id} product={product}></Item>
                 ))}
             </div>
         </main>

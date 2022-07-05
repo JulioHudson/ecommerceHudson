@@ -1,4 +1,5 @@
-import React from "react";
+/* import React from "react";
+
 
 export default function ShoppingCart(props) {
     const {cartItems, onAdd, onRemove} = props;
@@ -11,8 +12,8 @@ export default function ShoppingCart(props) {
                     <div key={item.id} className="row">
                         <div className="col-2">{item.name}</div>
                         <div className="col-2">
-                            <button onClick={() => onAdd(item)} className="add">+</button>
-                            <button onClick={() => onRemove(item)} className="remove">-</button>
+                            <button onClick={() => AddRemove.onAdd(item)} className="add">+</button>
+                            <button onClick={() => AddRemove.onRemove(item)} className="remove">-</button>
                         </div>
                         <div className="col-2 text-right">
                             {item.qty} x AR${item.price.toFixed(2)}
@@ -22,4 +23,4 @@ export default function ShoppingCart(props) {
             </div>
         </aside>
     )
-}
+} */

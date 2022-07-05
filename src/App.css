@@ -97,3 +97,8 @@ button.badge {
 .text-right {
   text-align: right;
 }
+
+.card {
+  display: flex;  
+  flex-wrap: wrap;
+}
