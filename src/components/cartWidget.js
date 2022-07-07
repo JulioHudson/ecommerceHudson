@@ -1,11 +1,15 @@
 import React from 'react';
 import cart from "../assets/images/shoppingCart.png";
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
     return (
-        <button className="cart-btn">
+        <Link to={`/ShoppingCart/`}>
+            <button className="cart-btn">
             <img src={cart} alt="Cart Icon" className="cart-widget"/>
-        </button>
+            </button>
+        </Link>
+        
     );
 };
 
