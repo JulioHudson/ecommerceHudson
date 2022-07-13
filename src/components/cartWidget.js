@@ -8,6 +8,7 @@ const CartWidget = () => {
             <button className="cart-btn">
             <img src={cart} alt="Cart Icon" className="cart-widget"/>
             </button>
+            <p>{}</p>
         </Link>
         
     );
