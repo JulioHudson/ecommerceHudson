@@ -73,9 +73,26 @@ header img {
 }
 
 .cart-btn img {
+  display: flex;
   width: 50px;
   height: 50px;
+  position: relative;
 }
+
+/* .cart-num {
+  position: relative;
+  top: 0;
+  left: 55%;
+  background: red;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2px;
+} */
 
 img.small {
   max-height: 8rem;
@@ -162,3 +179,10 @@ button.badge {
   text-decoration: none;
   color: #3498db;
 }
+
+.cart img{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5%;
+}
+  

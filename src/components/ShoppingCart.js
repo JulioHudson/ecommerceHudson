@@ -1,26 +1,32 @@
 import React from "react";
+import { useCartContext } from "../context/CartContext";
+import ItemInCart from "./ItemInCart";
 
+const ShoppingCart = () => {
+    const { cart, totalPrice, clearCart } = useCartContext();
 
-
-export default function ShoppingCart() {
+    if (cart.length === 0) {
+        return (
+            <>
+            <div className='block'>
+                <p>No hay productos en el carrito</p>
+            </div>
+            </>
+        );
+}
     return (
-        <aside className="block col-1">
-            <h2>Carrito de compras</h2>
-            {/* <div>
-                {cartItems.length === 0 && <div>El carrito esta vacio</div>}
-                {cartItems.map((item) => (
-                    <div key={item.id} className="row">
-                        <div className="col-2">{item.name}</div>
-                        <div className="col-2">
-                            <button  className="add">+</button>
-                            <button className="remove">-</button>
-                        </div>
-                        <div className="col-2 text-right">
-                            {item.qty} x AR${item.price.toFixed(2)}
-                        </div>
-                    </div>
-                ))}
-            </div> */}
-        </aside>
+        <>
+            <div className='block'>
+                {
+                    cart.map(product => <ItemInCart key={product.id} product={product} />)
+                }
+                <p>
+                    Total: {totalPrice()}
+                </p>
+                <button onClick={clearCart}>Vaciar carrito</button>
+            </div>
+        </>
     )
 }
+
+export default ShoppingCart
