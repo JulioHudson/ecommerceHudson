@@ -2,19 +2,19 @@ const products = [
         {
             "id": 0,
             "category": "Cuadernos",
-            "name": "Blue Moon",
+            "name": "Luna Azul",
             "price": 1300,
             "stock": 8,
-            "description": "2022 diary with our famous cat Luna, seeing the moon reflected in the water",
+            "description": "Cuaderno con nuestra famosa gata Luna mirando a la luna reflejarse en el agua",
             "image": "https://i.ibb.co/pJ18RjC/blueagenda.jpg",
         },
         {
             "id": 1,
             "category": "Cuadernos",
-            "name": "Ballons",
+            "name": "Globos",
             "price": 1300,
             "stock": 8,
-            "description": "2022 diary with Luna having a balloon adventure",
+            "description": "Luna teniendo una aventura en globo",
             "image": "https://i.ibb.co/SwPVT1M/pinkagenda.jpg"
         },
         {
@@ -23,7 +23,7 @@ const products = [
             "name": "Bitacoras",
             "price": 750,
             "stock": 5,
-            "description": "A story to play, read and color",
+            "description": "Una historia para jugar, leer y colorear",
             "image": "https://i.ibb.co/kcGtW7x/bitacoras-front.jpg"
         },
         {
@@ -32,7 +32,7 @@ const products = [
             "name": "El escritor de exitos",
             "price": 500,
             "stock": 5,
-            "description": "Compilation of my adventures with art and drawing",
+            "description": "Una recopilación de mis aventuras con el arte y la escritura",
             "image": "https://i.ibb.co/QMXdtxQ/escritor-front.jpg"
         },
         {
@@ -41,7 +41,7 @@ const products = [
             "name": "Garabatos",
             "price": 900,
             "stock": 5,
-            "description": "Compilation of stories, characters, jokes and reflections",
+            "description": "Una recopilación de historias, personajes, chistes y reflecciones",
             "image": "https://i.ibb.co/TYn0N4R/garabatos-front.jpg"
         },
         {
@@ -50,7 +50,7 @@ const products = [
             "name": "Garabatos 2",
             "price": 900,
             "stock": 5,
-            "description": "Second installment of our successful book, with new stories and characters",
+            "description": "Segundo libro de nuestra exitosa serie, con nuevas historias y personajes",
             "image": "https://i.ibb.co/G3dLqpQ/garabatos2-front.jpg"
         },
         {
@@ -59,7 +59,7 @@ const products = [
             "name": "Luna",
             "price": 800,
             "stock": 5,
-            "description": "My story with an amazing kitty named Luna",
+            "description": "Mi historia con una increible gata llamada Luna",
             "image": "https://i.ibb.co/vsy4CJ3/luna-front.jpg"
         },
         {
@@ -68,25 +68,25 @@ const products = [
             "name": "Supercat Luna",
             "price": 700,
             "stock": 7,
-            "description": "Logbook with Luna dressing like a superhero",
+            "description": "Agenda con Luna supercat en la portada",
             "image": "https://i.ibb.co/NsBNDwN/logbookfront-01.jpg"
         },
         {
             "id": 8,
             "category": "Agendas",
-            "name": "Luna with dark background",
+            "name": "Luna con fondo oscuro",
             "price": 700,
             "stock": 7,
-            "description": "Logbook with Luna making funny faces",
+            "description": "Agenda con caras graciosas de Luna en la portada",
             "image": "https://i.ibb.co/znB4gSy/logbookfront-02.jpg"
         },
         {
             "id": 9,
             "category": "Tazas",
-            "name": "Luna with dark background",
+            "name": "Luna con fondo oscuro",
             "price": 1200,
             "stock": 10,
-            "description": "Mug with Luna making funny faces",
+            "description": "Taza con caras graciosas de Luna en la portada",
             "image":"https://i.ibb.co/7ypFzjp/mug-01.jpg"
         },
         {
@@ -95,25 +95,25 @@ const products = [
             "name": "101 Lunas",
             "price": 1200,
             "stock": 10,
-            "description": "The one hundred and one Lunas mug",
+            "description": "Las ciento una lunas en una taza",
             "image": "https://i.ibb.co/bbpbNrN/mug-02.jpg"
         },
         {
             "id": 11,
             "category": "Tazas",
-            "name": "Dreaming in the clouds",
+            "name": "Soñando en las nubes",
             "price": 1200,
             "stock": 10,
-            "description": "Mug with Luna dreaming in the clouds",
+            "description": "Taza con Luna soñando en las nubes",
             "image": "https://i.ibb.co/XjrqP1Q/mug-03.jpg"
         },
         {
             "id": 12,
             "category": "Tazas",
-            "name": "Curious Luna",
+            "name": "Luna la curiosa",
             "price": 1200,
             "stock": 10,
-            "description": "Mug with our favourite kitten wondering about the misteries of the universe",
+            "description": "Taza con nuestra gata favorita preguntandose sobre los misterios del universo",
             "image": "https://i.ibb.co/yywpcK7/mug-04.jpg"
         },
     ]

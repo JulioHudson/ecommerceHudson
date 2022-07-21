@@ -1,30 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
-import { getProd } from './data';
+import { getFirestore, doc, getDoc} from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
-    const [product, setProduct]=useState({})
-    const [loading, setLoading]=useState(true)
-
-    const { id } = useParams();
+    const [data, setData]=useState({})
+    const { detailId } = useParams();
 
     useEffect(() => {
-    getProd(id)
-        .then((res) => {
-            setProduct(res);
-        })
-        .catch((error) => {
-            console.log(error);
-        })
-        .finally(() => {
-            setLoading(false);
-        });
-    }, [id]);
+        const querydb = getFirestore();
+        const queryDoc = doc(querydb, 'Products', detailId);
+        getDoc(queryDoc)
+            .then(res => setData({ id: res.id, ...res.data() }))
+            console.log(detailId);
+    }, [detailId]);
 
     return (
     <div>
-        {loading ? <p>Cargando...</p> : <ItemDetail product={product}/> }
+        { <ItemDetail data={data}/> }
     </div>
     )
 }

@@ -3,25 +3,25 @@ import ItemCounter from './ItemCount'
 import { useCartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
 
-export default function ItemDetail({ product }) {
+export default function ItemDetail({ data }) {
     const [goToCart, setGoToCart] = useState(false);
     const {addProduct} = useCartContext();
 
     const onAdd = (quantity) => {
         setGoToCart(true);
-        addProduct(product, quantity);
+        addProduct(data, quantity);
         };
 
     return (
         <div className=''>
-            <img className='small' src={product.image} alt={product.name}></img>
-            <h3>{product.name}</h3>
-            <div>AR${product.price}</div>
-            <p>{product.description}</p>
+            <img className='small' src={data.image} alt={data.name}></img>
+            <h3>{data.name}</h3>
+            <div>AR${data.price}</div>
+            <p>{data.description}</p>
         {   <div>
                 {
                     goToCart ? <Link to='/shoppingCart'>Finalizar compra</Link>
-                :<ItemCounter initial={1} stock={product.stock} onAdd={onAdd} />
+                :<ItemCounter initial={1} stock={data.stock} onAdd={onAdd} />
             }
             </div>}
         </div>
